@@ -1,7 +1,11 @@
 import type { NextPage } from 'next';
+import { Products } from './Products';
 
 const Home: NextPage = () => (
-  <h1>Hello World!</h1>
+  <div>
+    <h1>Hello World!</h1>
+    <Products />
+  </div>
 );
 
 export default Home;
