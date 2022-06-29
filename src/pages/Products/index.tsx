@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import styles from './styles.module.scss';
 
 const products = [
@@ -10,8 +12,13 @@ const products = [
 ];
 
 export const Products = () => (
-  <div className={styles.container}>
-    <h1 className={styles.title}>Products <span>oi</span></h1>
-    {products.map((product) => <p>{product.name}</p>)}
-  </div>
+  <>
+    <Head>
+      <title>Home | ig.news</title>
+    </Head>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Products <span>oi</span></h1>
+      {products.map((product) => <p>{product.name}</p>)}
+    </div>
+  </>
 );
